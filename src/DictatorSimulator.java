@@ -18,6 +18,8 @@ public class DictatorSimulator {
         politicalDictator.holdParade();
         System.out.println();
 
+
+        // En anden måde at printe det ud ved hjælp af instance of
         Leader[] leaders = {militaryDictator, politicalDictator};
         for(Leader leader : leaders)
         {

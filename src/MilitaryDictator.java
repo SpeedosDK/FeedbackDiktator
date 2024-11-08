@@ -2,6 +2,7 @@ public class MilitaryDictator extends Leader implements PowerActions {
     String militaryRank;
 
     public MilitaryDictator(String name, String country, int yearsInPower, String militaryRank) {
+        // De værdier vi giver til vores parameter bliver til super klassen værdier
         super.name = name;
         super.country = country;
         super.yearsInPower = yearsInPower;
@@ -9,6 +10,7 @@ public class MilitaryDictator extends Leader implements PowerActions {
     }
     @Override
     public String giveSpeech() {
+        // Vil returner en String
         String speech = (militaryRank + " " + name + " gives a speech promoting the military.");
         return speech;
     }
